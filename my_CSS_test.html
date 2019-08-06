@@ -2,6 +2,44 @@
 <html>
 <head>
   <title>Experimenting CSS</title>
+  <style>
+  tr{
+    height: 20%;
+  }
+  #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      flex: 2 2 150px;
+      height: 200px;
+    }
+
+    #box-2 {
+      background-color: orangered;
+      flex: 1 1 150px;
+      height: 200px;
+    }
+    .mostra_codice {
+      background-color: green;
+      /*align-items: flex-start;*/
+    }
+
+    .d1{background:LightSkyBlue;}
+ .d2{background:LightSalmon;}
+ .d3{background:PaleTurquoise;}
+ .d4{background:LightPink;}
+ .d5{background:PaleGreen;}
+
+ .container {
+   font-size: 40px;
+   width: 100%;
+   background: LightGray;
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+ }
+  </style>
 </head>
 <body>
 <nav>
@@ -11,8 +49,45 @@
   <a href="#" >Experimenting CSS </a>
 </nav>
 <h3> Coming soon</h3>
-<table>
-  <tr><td>CSS</td><td>Risultato</td></tr>
-    <tr><td>CSS</td><td>Risultato</td></tr>
+<table style="width: 100%; ">
+    <tr>
+      <td style="width: 30%">
+        <h5>CSS</h5>
+      </td>
+      <td>
+        <h5>Risultato</h5>
+      </td>
+    </tr>
+    <tr>
+      <td><div class="mostra_codice"> <h6>flex</h6>
+      <p> A shortcut to set several flex properties at once</p>
+      <p>For example, <code>flex: 1 0 10px;</code> will set the item to
+        <code>flex-grow: 1;</code>,
+        <code>flex-shrink: 0;</code>, and
+        <code>flex-basis: 10px;</code></p>
+    </div></td>
+    <td style="width: 70%"><h6> Risultato</h6>
+      <div id="box-container">
+          <div id="box-1"></div>
+          <div id="box-2"></div>
+      </div>
+    </td></tr>
+    <tr>
+      <td><div class="mostra_codice"><h6>CSS Grid</h6>
+        <code>
+          display: grid;
+  grid-template-columns: 100px 100px 100px;
+        </code>
+      </div></td>
+      <td>
+        <div class="container">
+          <div class="d1">1</div>
+          <div class="d2">2</div>
+          <div class="d3">3</div>
+          <div class="d4">4</div>
+          <div class="d5">5</div>
+        </div>
+      </td>
+    </tr>
 </table>
 </body>
