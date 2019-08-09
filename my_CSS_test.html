@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="myStyle.css">
   <title>Experimenting CSS</title>
   <style>
-  tr{
-    height: 20%;
-  }
   #box-container {
       display: flex;
-      height: 500px;
     }
     #box-1 {
       background-color: dodgerblue;
       flex: 2 2 150px;
-      height: 200px;
+      height: 100px;
     }
 
     #box-2 {
       background-color: orangered;
       flex: 1 1 150px;
-      height: 200px;
-    }
-    .mostra_codice {
-      background-color: green;
-      /*align-items: flex-start;*/
+      height: 100px;
     }
 
     .d1{background:LightSkyBlue;}
- .d2{background:LightSalmon;}
- .d3{background:PaleTurquoise;}
- .d4{background:LightPink;}
- .d5{background:PaleGreen;}
+    .d2{background:LightSalmon;}
+    .d3{background:PaleTurquoise;}
+    .d4{background:LightPink;}
+    .d5{background:PaleGreen;}
 
  .container {
    font-size: 40px;
@@ -53,37 +45,40 @@
   <a href="main_project.html"  target="_blank">Main Project</a>
   <a href="#" >Experimenting CSS </a>
 </nav>
-<h3> Coming soon</h3>
-<table style="width: 100%; ">
+<table id="tableCSSTest">
     <tr>
-      <td style="width: 30%">
-        <h5>CSS</h5>
-      </td>
-      <td>
-        <h5>Risultato</h5>
-      </td>
+      <th style="width: 30%">
+        CSS
+      </th>
+      <th style="width: 70%">
+        Risultato
+      </th>
     </tr>
     <tr>
-      <td><div class="mostra_codice"> <h6>flex</h6>
-      <p> A shortcut to set several flex properties at once</p>
-      <p>For example, <code>flex: 1 0 10px;</code> will set the item to
-        <code>flex-grow: 1;</code>,
-        <code>flex-shrink: 0;</code>, and
-        <code>flex-basis: 10px;</code></p>
-    </div></td>
-    <td style="width: 70%"><h6> Risultato</h6>
+      <td >
+        <code>flex: 1 0 10px; //equal to
+          <br>
+        flex-grow: 1;
+        <br>
+        flex-shrink: 0;
+        <br>
+        flex-basis: 10px;</code>
+      </td>
+    <td >
       <div id="box-container">
           <div id="box-1"></div>
           <div id="box-2"></div>
       </div>
-    </td></tr>
+    </td>
+    </tr>
     <tr>
-      <td><div class="mostra_codice"><h6>CSS Grid</h6>
+      <td class="mostra_codice">
         <code>
           display: grid;
-  grid-template-columns: 100px 100px 100px;
+          <br>
+          grid-template-columns: 100px 100px 100px;
         </code>
-      </div></td>
+      </td>
       <td>
         <div class="container">
           <div class="d1">1</div>

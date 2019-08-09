@@ -2,8 +2,37 @@
 
 body{
   background-color: #eeffff;
+  font-family: Lato, Arial, sans-serif;
 }
 
+nav {
+
+}
 .fatti{
   background-color: #ddeeee;
+}
+
+.fatti ul{
+  font-size: smaller;
+}
+#tableCSSTest{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableCSSTest td, #tableCSSTest th {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+#tableCSSTest tr:hover {
+  background-color: #ddeeee;
+}
+
+#tableCSSTest th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAFFF;
+  color: white;
 }
