@@ -1,19 +1,31 @@
-
+$lista_font:    Lato, Arial, sans-serif;
+$colore_base: #00BC00;
+$grigino: #b0e5b0;
+$chiaro: #f2fff2;
+$scuro: #007700;
 
 body{
-  background-color: #eeffff;
-  font-family: Lato, Arial, sans-serif;
+  background-color: #f2fff2;
+  font-family: $font-stack;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+      padding: 30px;
+    }
 }
 
 nav {
 
 }
 .fatti{
-  background-color: #ddeeee;
+  background-color: #b0e5b0;
+  color: #007700;
 }
 
 .fatti ul{
   font-size: smaller;
+  margin-bottom: 10px;
 }
 #tableCSSTest{
   border-collapse: collapse;
@@ -21,12 +33,12 @@ nav {
 }
 
 #tableCSSTest td, #tableCSSTest th {
-  border: 1px solid #cccccc;
+  border: 1px solid #b0e5b0;
   padding: 8px;
 }
 
 #tableCSSTest tr:hover {
-  background-color: #ddeeee;
+  background-color: #b0e5b0;
 }
 
 #tableCSSTest th {
@@ -38,7 +50,7 @@ nav {
 }
 
 .container-fluid {
-  border: 1px solid #cccccc;
+  border: 1px solid #b0e5b0;
   align: center;
   vertical-align: center;
   display: table;
@@ -50,7 +62,7 @@ nav {
   background-color: #ffffff;
 }
 
-.ccols{
+[class*="col-"]{
   border: 1px solid #cccccc;
   display: flex;
   align-content: center;
